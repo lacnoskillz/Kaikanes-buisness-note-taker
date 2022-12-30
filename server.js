@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const noteData = require('./Develop/db/notes.json');
 const app = express();
-const uuid = require('./helpers/uuid');
-const PORT = 3001;
+
+const PORT =  process.env.PORT || 3001;
 const fs = require('fs')
 const { v4: uuidv4 } = require('uuid')
 
